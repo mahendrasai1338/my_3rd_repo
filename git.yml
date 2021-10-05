@@ -1,0 +1,11 @@
+---
+- name: "Play 1- cgi website configuration"  
+  hosts: webservers
+  become: yes
+  tasks:
+    - name: "install apache"
+      yum:
+        name: "git"
+        state: present
+        
+
